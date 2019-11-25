@@ -14,7 +14,10 @@ function Recipe() {
                 data-caption="Jollof Rice and Agushi"
               />
 
-              <a className="btn-floating halfway-fab waves-effect waves-light red">
+              <a
+                className="btn-floating halfway-fab waves-effect waves-light red"
+                href="#!"
+              >
                 <i className="material-icons">favorite</i>
               </a>
               <span className="card-title">Card Title</span>
@@ -27,8 +30,8 @@ function Recipe() {
               </p>
             </div>
             <div className="card-action">
-              <a href="#">Recipe Url</a>
-              <a href="#">Details</a>
+              <a href="#!">Recipe Url</a>
+              <a href="#!">Details</a>
             </div>
           </div>
         </div>
