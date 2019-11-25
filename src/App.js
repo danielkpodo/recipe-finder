@@ -15,35 +15,39 @@ class App extends Component {
       app_id: "bf2a02e7"
     };
   }
-  componentDidMount() {
-    this.handleFetchRequest();
-  }
 
-  handleFetchRequest = () => {
+  handleRecipesRequest = e => {
+    e.preventDefault();
     this.setState({ isLoading: true });
-    const url = `https://api.edamam.com/search?q=chicken&app_id=${this.state.app_id}&app_key=${this.state.api_key}`;
+    const url = `https://api.edamam.com/search?q=${this.state.searchPhrase}&app_id=${this.state.app_id}&app_key=${this.state.api_key}&from=0&to=10`;
 
     fetch(url)
       .then(res => res.json())
       .then(data => {
         this.setState({
+          isLoading: false,
           recipes: data
         });
-        console.log(this.state.recipes);
+        console.log("Results", this.state.recipes);
       })
-      .catch(err => console.log(err, "Failed to retrieve recipes"));
+      .catch(err => console.log("Failure to retrieve recipes", err));
   };
 
   handleChange = e => {
-    console.log("Input changed", e);
+    this.setState({
+      searchPhrase: e.target.value
+    });
   };
 
   render() {
-    const { handleChange } = this;
+    const { handleRecipesRequest, handleChange } = this;
     return (
       <div className="app-container">
         <Navbar />
-        <SearchFilter inputFilter={handleChange} />
+        <SearchFilter
+          inputRequest={handleRecipesRequest}
+          inputFilter={handleChange}
+        />
         <Recipe />
       </div>
     );

@@ -1,19 +1,29 @@
 import React from "react";
 
 function SearchFilter(props) {
-  const { inputFilter } = props;
+  const { inputRequest, inputFilter } = props;
 
   return (
     <div className="search-filter center">
       <div className="row">
-        <div className="col s12 input-field">
-          <input
-            type="text"
-            placeholder="Start searching..."
-            autoFocus
-            onChange={inputFilter}
-          />
-        </div>
+        <form onSubmit={inputRequest}>
+          <div className="col  s12 input-field">
+            <input
+              type="text"
+              placeholder="Search for recipes, ingredients, & anything food"
+              onChange={inputFilter}
+              autoFocus
+            />
+            <span className="helper-text" data-success="right">
+              Hit enter once typing is done
+            </span>
+          </div>
+          {/* <div className="col xl4 s12 submit-btn">
+            <a class="waves-effect waves-light btn-small">
+              <i class="material-icons right">send</i>Search
+            </a>
+          </div> */}
+        </form>
       </div>
     </div>
   );

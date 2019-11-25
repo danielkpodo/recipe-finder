@@ -28,24 +28,49 @@ body {
   border-bottom: 1px solid #e32929;
   -webkit-box-shadow: 0 1px 0 0 #e32929;
           box-shadow: 0 1px 0 0 #e32929;
-  font-weight: bolder;
+  font-weight: 500;
+  opacity: 0.8;
   font-size: 1.0625rem;
+  padding: 0 1rem;
 }
 
 ::-webkit-input-placeholder {
   color: #555;
+  opacity: 0.5;
+  padding: 0 1rem;
 }
 
 :-ms-input-placeholder {
   color: #555;
+  opacity: 0.5;
+  padding: 0 1rem;
 }
 
 ::-ms-input-placeholder {
   color: #555;
+  opacity: 0.5;
+  padding: 0 1rem;
 }
 
 ::placeholder {
   color: #555;
+  opacity: 0.5;
+  padding: 0 1rem;
+}
+
+.submit-btn {
+  margin: 30px 5px;
+}
+
+.submit-btn a {
+  margin-left: -170px;
+  background: #e32929;
+  display: inline-block;
+}
+
+.submit-btn a:hover {
+  background: #eef5b2;
+  color: #000;
 }
 
 .card-action {
