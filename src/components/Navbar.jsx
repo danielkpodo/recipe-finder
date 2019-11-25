@@ -6,7 +6,7 @@ function Navbar() {
       <nav>
         <div className="nav-wrapper">
           <a href="#!" className="brand-logo">
-            Recipe Finder
+            Recipe
           </a>
         </div>
       </nav>

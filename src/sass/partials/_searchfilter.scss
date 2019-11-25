@@ -2,15 +2,18 @@
   max-width: 900px;
   margin: 0.9375rem auto;
   padding: 0.625rem;
-
+  img {
+    max-width: 15%;
+    margin-top: -30px;
+  }
   .input-field input[type="text"] {
+    margin-top: -50px;
+    margin-bottom: 0;
     &:focus {
       border-bottom: 1px solid #e32929;
       box-shadow: 0 1px 0 0 #e32929;
       font-weight: 500;
       opacity: 0.8;
-      font-size: 1.0625rem;
-      padding: 0 1rem;
     }
   }
 }

@@ -1,11 +1,12 @@
 import React from "react";
-
+import food from "./images/food.png";
 function SearchFilter(props) {
   const { inputRequest, inputFilter } = props;
 
   return (
     <div className="search-filter center">
-      <div className="row">
+      <img src={food} alt="food logo from the internet" />
+      <div className="row form">
         <form onSubmit={inputRequest}>
           <div className="col  s12 input-field">
             <input

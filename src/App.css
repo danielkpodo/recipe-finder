@@ -24,14 +24,22 @@ body {
   padding: 0.625rem;
 }
 
+.search-filter img {
+  max-width: 15%;
+  margin-top: -30px;
+}
+
+.search-filter .input-field input[type="text"] {
+  margin-top: -50px;
+  margin-bottom: 0;
+}
+
 .search-filter .input-field input[type="text"]:focus {
   border-bottom: 1px solid #e32929;
   -webkit-box-shadow: 0 1px 0 0 #e32929;
           box-shadow: 0 1px 0 0 #e32929;
   font-weight: 500;
   opacity: 0.8;
-  font-size: 1.0625rem;
-  padding: 0 1rem;
 }
 
 ::-webkit-input-placeholder {
@@ -71,6 +79,14 @@ body {
 .submit-btn a:hover {
   background: #eef5b2;
   color: #000;
+}
+
+.recipe {
+  margin-top: -190px;
+}
+
+.recipe .form {
+  border: 1px solid red;
 }
 
 .card-action {
