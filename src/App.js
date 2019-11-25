@@ -1,4 +1,7 @@
-import React from "react";
+import React, { Component } from "react";
+import Navbar from "./components/Navbar";
+import SearchFilter from "./components/SearchFilter";
+import Recipe from "./components/Recipe";
 import "./App.css";
 
 class App extends Component {
@@ -8,8 +11,10 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="wrapper">
-        <h1>Hello Daniel Narh</h1>
+      <div className="app-container">
+        <Navbar />
+        <SearchFilter />
+        <Recipe />
       </div>
     );
   }

@@ -1,0 +1,14 @@
+.search-filter {
+  max-width: 900px;
+  margin: 0.9375rem auto;
+  padding: 0.625rem;
+
+  .input-field input[type="text"] {
+    &:focus {
+      border-bottom: 1px solid #000;
+      box-shadow: 0 1px 0 0 #000;
+      font-weight: bolder;
+      font-size: 1.125rem;
+    }
+  }
+}
