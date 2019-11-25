@@ -8,15 +8,15 @@
 .card
   .card-action
   a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
-  color: #3d0e1e;
+  color: #e32929;
   font-weight: 600;
   &:hover {
-    color: #ef483c;
+    color: goldenrod;
+    transition: 400ms ease-in-out;
   }
 }
 
 .card .card-image .card-title {
-  color: #ffa372;
-  text-shadow: 0.1px 0.1px 0.1px #fff;
-  font-weight: 700;
+  color: #eef5b2;
+  font-weight: 600;
 }
