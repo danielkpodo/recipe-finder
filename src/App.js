@@ -12,23 +12,25 @@ class App extends Component {
       searchPhrase: "",
       isLoading: true,
       api_key: "b645dff97ae465961c4ef42a777c94b0",
-      app_id: "bf2a02e7"
+      app_id: "bf2a02e7",
+      totalResults: 0
     };
   }
 
   handleRecipesRequest = e => {
     e.preventDefault();
     this.setState({ isLoading: true });
-    const url = `https://api.edamam.com/search?q=${this.state.searchPhrase}&app_id=${this.state.app_id}&app_key=${this.state.api_key}&from=0&to=10`;
+    const url = `https://api.edamam.com/search?q=${
+      this.state.searchPhrase === "" ? "chicken" : this.state.searchPhrase
+    }&app_id=${this.state.app_id}&app_key=${this.state.api_key}&from=0&to=30`;
 
     fetch(url)
       .then(res => res.json())
       .then(data => {
         this.setState({
           isLoading: false,
-          recipes: data
+          recipes: data.hits
         });
-        console.log("Results", this.state.recipes);
       })
       .catch(err => console.log("Failure to retrieve recipes", err));
   };
@@ -48,7 +50,7 @@ class App extends Component {
           inputRequest={handleRecipesRequest}
           inputFilter={handleChange}
         />
-        <Recipe />
+        <Recipe foodRecipes={this.state.recipes} />
       </div>
     );
   }
