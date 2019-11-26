@@ -1,0 +1,10 @@
+.recipe-details {
+  a {
+    margin: 1rem 1rem;
+    background: goldenrod;
+    font-weight: 800;
+    &:hover {
+      background: #e32929;
+    }
+  }
+}

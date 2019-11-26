@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const RecipeCard = props => {
   const { image, label, calories } = props.food.recipe;
   return (
@@ -22,9 +22,9 @@ const RecipeCard = props => {
           <span className="card-title">{label}</span>
         </div>
         <div className="card-action">
-          <a href="#!">
+          <Link to={`/recipe/${label.replace(/ /g, "-")}`}>
             <i className="fas fa-eye"></i> View
-          </a>
+          </Link>
           <a href="#!">
             {" "}
             <i className="fas fa-info-circle"></i> Calories{" "}

@@ -3,7 +3,6 @@ import RecipeCard from "./RecipeCard";
 
 function Recipe(props) {
   const { foodRecipes } = props;
-  console.log("Foods", foodRecipes);
   return (
     <div className="recipe">
       <div className="row">

@@ -49,7 +49,11 @@ class App extends Component {
       <div className="app-container">
         <Navbar />
         <Switch>
-          <Route exact path="/recipe/:id" render={() => <RecipeDetails />} />
+          <Route
+            exact
+            path="/recipe/:label"
+            render={() => <RecipeDetails recipes={this.state.recipes} />}
+          />
           <Route exact path="/not-found" component={NotFound} />
           <Route
             exact
