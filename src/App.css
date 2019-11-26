@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Alatsi&display=swap");
 .navbar-fixed a {
   padding: 0 1rem;
 }
@@ -16,6 +18,7 @@ body {
   background: #eef5b2;
   line-height: 1.5;
   -webkit-font-smoothing: antialised;
+  font-family: "Nunito", sans-serif;
 }
 
 .search-filter {
@@ -113,13 +116,21 @@ a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
 .card
 .card-action
 a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {
-  color: goldenrod;
+  color: #332b00;
   -webkit-transition: 400ms ease-in-out;
   transition: 400ms ease-in-out;
 }
 
 .card .card-image .card-title {
-  color: #eef5b2;
-  font-weight: 600;
+  color: #f1f1f1;
+  font-size: 1.2rem;
+  font-family: "Alatsi", sans-serif;
+  position: absolute;
+  bottom: 0;
+  background: black;
+  /* Fallback color */
+  background: rgba(0, 0, 0, 0.5);
+  /* Black background with 0.5 opacity */
+  width: 100%;
 }
 /*# sourceMappingURL=App.css.map */

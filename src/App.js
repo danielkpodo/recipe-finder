@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import Navbar from "./components/Navbar";
-import SearchFilter from "./components/SearchFilter";
-import Recipe from "./components/Recipe";
+import NotFound from "./components/NotFound";
+import RecipeDetails from "./components/RecipeDetails";
+import { Route, Redirect, Switch } from "react-router-dom";
 import "./App.css";
+import HomePage from "./components/Home";
 
 class App extends Component {
   constructor() {
@@ -46,11 +48,22 @@ class App extends Component {
     return (
       <div className="app-container">
         <Navbar />
-        <SearchFilter
-          inputRequest={handleRecipesRequest}
-          inputFilter={handleChange}
-        />
-        <Recipe foodRecipes={this.state.recipes} />
+        <Switch>
+          <Route exact path="/recipe/:id" render={() => <RecipeDetails />} />
+          <Route exact path="/not-found" component={NotFound} />
+          <Route
+            exact
+            path="/"
+            render={() => (
+              <HomePage
+                inputRequest={handleRecipesRequest}
+                inputFilter={handleChange}
+                foodRecipes={this.state.recipes}
+              />
+            )}
+          />
+          <Redirect to="/not-found" />
+        </Switch>
       </div>
     );
   }

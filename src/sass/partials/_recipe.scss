@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Alatsi&display=swap");
 .recipe {
   margin-top: -190px;
   .form {
@@ -18,12 +19,19 @@
   color: #e32929;
   font-weight: 600;
   &:hover {
-    color: goldenrod;
+    color: darken(gold, 40%);
     transition: 400ms ease-in-out;
   }
 }
 
 .card .card-image .card-title {
-  color: #eef5b2;
-  font-weight: 600;
+  color: #f1f1f1;
+  font-size: 1.2rem;
+  font-family: "Alatsi", sans-serif;
+
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  width: 100%;
 }

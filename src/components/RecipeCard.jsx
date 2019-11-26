@@ -1,7 +1,7 @@
 import React from "react";
 
 const RecipeCard = props => {
-  const { image } = props.food.recipe;
+  const { image, label, calories } = props.food.recipe;
   return (
     <div className="col s12 m6 l4 xl3">
       <div className="card card-large">
@@ -9,28 +9,27 @@ const RecipeCard = props => {
           <img
             src={image}
             className="materialboxed"
-            alt=""
+            alt={label}
             data-caption="Jollof Rice and Agushi"
           />
 
           <a
-            className="btn-floating halfway-fab waves-effect waves-light red"
+            className="btn-floating btn-small halfway-fab waves-effect waves-light red"
             href="#!"
           >
             <i className="material-icons">favorite</i>
           </a>
-          <span className="card-title">Card Title</span>
-        </div>
-        <div className="card-content">
-          <p>
-            I am a very simple card. I am good at containing small bits of
-            information. I am convenient because I require little markup to use
-            effectively.
-          </p>
+          <span className="card-title">{label}</span>
         </div>
         <div className="card-action">
-          <a href="#!">Recipe Url</a>
-          <a href="#!">Details</a>
+          <a href="#!">
+            <i className="fas fa-eye"></i> View
+          </a>
+          <a href="#!">
+            {" "}
+            <i className="fas fa-info-circle"></i> Calories{" "}
+            {Math.round(calories)}
+          </a>
         </div>
       </div>
     </div>

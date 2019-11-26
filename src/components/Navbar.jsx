@@ -1,13 +1,13 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <div className="navbar-fixed">
       <nav>
         <div className="nav-wrapper">
-          <a href="#!" className="brand-logo">
-            Recipe
-          </a>
+          <Link to="/" className="brand-logo">
+            AnyRecipe
+          </Link>
         </div>
       </nav>
     </div>
