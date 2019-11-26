@@ -17,12 +17,12 @@ const RecipeCard = props => {
             className="btn-floating btn-small halfway-fab waves-effect waves-light red"
             href="#!"
           >
-            <i className="material-icons">favorite</i>
+            <i className="material-icons">share</i>
           </a>
           <span className="card-title">{label}</span>
         </div>
         <div className="card-action">
-          <Link to={`/recipe/${label.replace(/ /g, "-")}`}>
+          <Link className="view" to={`/recipe/${label.replace(/ /g, "-")}`}>
             <i className="fas fa-eye"></i> View
           </Link>
           <a href="#!">

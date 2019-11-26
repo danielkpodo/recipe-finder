@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Alatsi&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash&display=swap");
 .navbar-fixed a {
   padding: 0 1rem; }
 .navbar-fixed .nav-wrapper {
-  background: #e32929; }
+  background: goldenrod; }
 
 html {
   box-sizing: border-box; }
@@ -56,17 +57,25 @@ body {
   justify-content: space-between;
   align-content: center;
   align-items: center; }
+  .card-action a {
+    color: goldenrod; }
 
 .card
 .card-action
 a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
-  color: #e32929;
-  font-weight: 600; }
+  color: yellowgreen;
+  text-transform: capitalize;
+  font-weight: 800; }
   .card
   .card-action
   a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {
-    color: #332b00;
+    color: #e32929;
     transition: 400ms ease-in-out; }
+
+.card
+.card-action
+.view:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+  color: #e32929; }
 
 .card .card-image .card-title {
   color: #f1f1f1;
@@ -80,11 +89,74 @@ a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
   /* Black background with 0.5 opacity */
   width: 100%; }
 
-.recipe-details a {
-  margin: 1rem 1rem;
-  background: goldenrod;
-  font-weight: 800; }
-  .recipe-details a:hover {
-    background: #e32929; }
+.recipe-details {
+  max-width: 1200px;
+  margin: 20px auto;
+  background: #fff;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8); }
+  .recipe-details h3,
+  .recipe-details h4 {
+    color: #e32929; }
+  .recipe-details h3 {
+    padding: 0 1rem;
+    margin: 5px 0;
+    font-weight: bolder;
+    text-align: center;
+    font-family: "Berkshire Swash", cursive;
+    font-size: 2rem; }
+  .recipe-details h4 {
+    font-weight: 600;
+    font-size: 1.5rem; }
+  .recipe-details a {
+    margin: 1rem 1rem;
+    background: goldenrod;
+    font-weight: 800; }
+    .recipe-details a:hover {
+      background: #e32929; }
+  .recipe-details img {
+    border-radius: 5px;
+    width: 100%;
+    padding: 1rem 1rem;
+    margin: 1rem 0; }
+    .recipe-details img:hover {
+      transform: rotate(2deg);
+      opacity: 0.8;
+      transition: 1.15s; }
+
+.labels a {
+  text-transform: capitalize;
+  background: goldenrod; }
+
+.calories p {
+  font-size: 1.2rem;
+  font-weight: bold; }
+
+.ingredients ul {
+  padding: 0 2rem; }
+  .ingredients ul li {
+    line-height: 1.5;
+    list-style: lower-roman;
+    font-size: 1.1rem;
+    font-weight: 500; }
+
+hr.style-seven {
+  overflow: visible;
+  /* For IE */
+  height: 30px;
+  border-style: solid;
+  border-color: goldenrod;
+  border-width: 2px 0 0 0;
+  border-radius: 20px; }
+
+hr.style-seven:before {
+  /* Not really supposed to work, but does */
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: goldenrod;
+  border-width: 0 0 2px 0;
+  border-radius: 20px; }
 
 /*# sourceMappingURL=App.css.map */
