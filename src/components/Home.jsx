@@ -7,7 +7,7 @@ function HomePage(props) {
   return (
     <>
       <SearchFilter inputRequest={inputRequest} inputFilter={inputFilter} />
-      <Recipe foodRecipes={foodRecipes} />
+      <Recipe foodRecipes={foodRecipes} loader={props.loader} />
     </>
   );
 }

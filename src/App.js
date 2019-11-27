@@ -12,7 +12,7 @@ class App extends Component {
     this.state = {
       recipes: [],
       searchPhrase: "",
-      isLoading: true,
+      isLoading: false,
       api_key: "b645dff97ae465961c4ef42a777c94b0",
       app_id: "bf2a02e7",
       totalResults: 0
@@ -22,9 +22,7 @@ class App extends Component {
   handleRecipesRequest = e => {
     e.preventDefault();
     this.setState({ isLoading: true });
-    const url = `https://api.edamam.com/search?q=${
-      this.state.searchPhrase === "" ? "chicken" : this.state.searchPhrase
-    }&app_id=${this.state.app_id}&app_key=${this.state.api_key}&from=0&to=100`;
+    const url = `https://api.edamam.com/search?q=${this.state.searchPhrase}&app_id=${this.state.app_id}&app_key=${this.state.api_key}&from=0&to=100`;
 
     fetch(url)
       .then(res => res.json())
@@ -63,6 +61,7 @@ class App extends Component {
                 inputRequest={handleRecipesRequest}
                 inputFilter={handleChange}
                 foodRecipes={this.state.recipes}
+                loader={this.state.isLoading}
               />
             )}
           />

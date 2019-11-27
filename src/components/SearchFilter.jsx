@@ -19,11 +19,6 @@ function SearchFilter(props) {
               Hit enter once typing is done
             </span>
           </div>
-          {/* <div className="col xl4 s12 submit-btn">
-            <a class="waves-effect waves-light btn-small">
-              <i class="material-icons right">send</i>Search
-            </a>
-          </div> */}
         </form>
       </div>
     </div>
