@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "danielkpodo.github.io/recipe-finder/static/css/main.12b8bc10.chunk.css",
+    "main.js": "danielkpodo.github.io/recipe-finder/static/js/main.c4647ade.chunk.js",
+    "main.js.map": "danielkpodo.github.io/recipe-finder/static/js/main.c4647ade.chunk.js.map",
+    "runtime-main.js": "danielkpodo.github.io/recipe-finder/static/js/runtime-main.b192e2e8.js",
+    "runtime-main.js.map": "danielkpodo.github.io/recipe-finder/static/js/runtime-main.b192e2e8.js.map",
+    "static/js/2.f9c74db2.chunk.js": "danielkpodo.github.io/recipe-finder/static/js/2.f9c74db2.chunk.js",
+    "static/js/2.f9c74db2.chunk.js.map": "danielkpodo.github.io/recipe-finder/static/js/2.f9c74db2.chunk.js.map",
+    "index.html": "danielkpodo.github.io/recipe-finder/index.html",
+    "precache-manifest.76111a921d5f2f02be610b3727d9dac2.js": "danielkpodo.github.io/recipe-finder/precache-manifest.76111a921d5f2f02be610b3727d9dac2.js",
+    "service-worker.js": "danielkpodo.github.io/recipe-finder/service-worker.js",
+    "static/css/main.12b8bc10.chunk.css.map": "danielkpodo.github.io/recipe-finder/static/css/main.12b8bc10.chunk.css.map",
+    "static/media/404.png": "danielkpodo.github.io/recipe-finder/static/media/404.e9a4dd50.png",
+    "static/media/food.png": "danielkpodo.github.io/recipe-finder/static/media/food.8a7795ae.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b192e2e8.js",
+    "static/js/2.f9c74db2.chunk.js",
+    "static/css/main.12b8bc10.chunk.css",
+    "static/js/main.c4647ade.chunk.js"
+  ]
+}
