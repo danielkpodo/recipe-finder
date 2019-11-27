@@ -5,6 +5,10 @@
   margin: 20px auto;
   background: #fff;
   box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+
+  .back {
+    background: yellowgreen;
+  }
   h3,
   h4 {
     color: #e32929;
@@ -66,6 +70,16 @@
       list-style: lower-roman;
       font-size: 1.1rem;
       font-weight: 500;
+    }
+  }
+}
+
+.source {
+  a {
+    background: none;
+    &:hover {
+      background: none;
+      color: #e32929;
     }
   }
 }

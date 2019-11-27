@@ -32,6 +32,9 @@
   .card-action
   .view:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
   color: #e32929;
+  &:hover {
+    color: yellowgreen;
+  }
 }
 
 .card .card-image .card-title {
