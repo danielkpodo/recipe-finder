@@ -58,7 +58,7 @@ class App extends Component {
           <Route exact path="/not-found" component={NotFound} />
           <Route
             exact
-            path="/"
+            path="/recipe-finder"
             render={() => (
               <HomePage
                 inputRequest={handleRecipesRequest}

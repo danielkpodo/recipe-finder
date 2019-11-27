@@ -5,7 +5,7 @@ function Navbar() {
     <div className="navbar-fixed">
       <nav>
         <div className="nav-wrapper">
-          <Link to="/" className="brand-logo">
+          <Link to="/recipe-finder" className="brand-logo">
             infinity<span>Foods</span>
           </Link>
         </div>

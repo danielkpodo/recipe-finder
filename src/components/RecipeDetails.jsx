@@ -22,7 +22,7 @@ class RecipeDetails extends Component {
         <div className="row">
           <div className="col s12">
             <Link
-              to="/"
+              to="/recipe-finder"
               className="btn btn-small waves-effect waves-light back"
             >
               <i className="material-icons left">arrow_back</i> Go Back
