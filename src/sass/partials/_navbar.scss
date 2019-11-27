@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Archivo+Narrow:700&display=swap");
+
 .navbar-fixed {
   a {
     padding: 0 1rem;
@@ -5,5 +7,15 @@
 
   .nav-wrapper {
     background: goldenrod;
+  }
+}
+
+nav .brand-logo {
+  font-family: "Archivo Narrow", sans-serif;
+  color: #1c7202;
+
+  span {
+    color: red;
+    text-shadow: 1px 1px 1px yellow;
   }
 }

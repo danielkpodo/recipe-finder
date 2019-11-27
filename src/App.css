@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Archivo+Narrow:700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Alatsi&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Berkshire+Swash&display=swap");
@@ -5,6 +6,13 @@
   padding: 0 1rem; }
 .navbar-fixed .nav-wrapper {
   background: goldenrod; }
+
+nav .brand-logo {
+  font-family: "Archivo Narrow", sans-serif;
+  color: #1c7202; }
+  nav .brand-logo span {
+    color: red;
+    text-shadow: 1px 1px 1px yellow; }
 
 html {
   box-sizing: border-box; }
@@ -22,7 +30,7 @@ body {
   padding: 0.625rem; }
   .search-filter img {
     max-width: 15%;
-    margin-top: -30px; }
+    margin-top: -20px; }
   .search-filter .input-field input[type="text"] {
     margin-top: -50px;
     margin-bottom: 0; }

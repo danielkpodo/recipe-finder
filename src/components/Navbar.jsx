@@ -6,7 +6,7 @@ function Navbar() {
       <nav>
         <div className="nav-wrapper">
           <Link to="/" className="brand-logo">
-            AnyRecipe
+            infinity<span>Foods</span>
           </Link>
         </div>
       </nav>
