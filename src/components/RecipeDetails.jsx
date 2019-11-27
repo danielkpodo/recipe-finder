@@ -15,7 +15,8 @@ class RecipeDetails extends Component {
       healthLabels,
       ingredientLines,
       source,
-      url
+      url,
+      totalWeight
     } = recipeInfo.recipe;
     return (
       <div className="recipe-details">
@@ -77,7 +78,10 @@ class RecipeDetails extends Component {
                 for step-by-step directions on cooking
               </p>
             </div>
-            <h4>Share to Family & Friends</h4>
+            <h4>Total Food Weight</h4>
+            <p>
+              <strong>{totalWeight.toFixed(4)}</strong>
+            </p>
           </div>
         </div>
       </div>
