@@ -24,7 +24,7 @@ class App extends Component {
     this.setState({ isLoading: true });
     const url = `https://api.edamam.com/search?q=${
       this.state.searchPhrase === "" ? "chicken" : this.state.searchPhrase
-    }&app_id=${this.state.app_id}&app_key=${this.state.api_key}&from=0&to=30`;
+    }&app_id=${this.state.app_id}&app_key=${this.state.api_key}&from=0&to=100`;
 
     fetch(url)
       .then(res => res.json())
