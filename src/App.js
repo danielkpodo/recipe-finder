@@ -22,7 +22,8 @@ class App extends Component {
   handleRecipesRequest = e => {
     e.preventDefault();
     this.setState({ isLoading: true });
-    const url = `https://api.edamam.com/search?q=${this.state.searchPhrase}&app_id=${this.state.app_id}&app_key=${this.state.api_key}&from=0&to=100`;
+    const { searchPhrase, api_key, app_id } = this.state;
+    const url = `https://api.edamam.com/search?q=${searchPhrase}&app_id=${app_id}&app_key=${api_key}&from=0&to=50`;
 
     fetch(url)
       .then(res => res.json())

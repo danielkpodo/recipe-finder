@@ -4,7 +4,6 @@ import { Link, withRouter } from "react-router-dom";
 class RecipeDetails extends Component {
   render() {
     const recipeId = this.props.match.params.label;
-    console.log(recipeId);
     const recipeInfo = this.props.recipes.filter(
       food => food.recipe.label.replace(/ /g, "-") === recipeId
     )[0];
