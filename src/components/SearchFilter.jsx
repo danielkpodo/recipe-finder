@@ -11,7 +11,7 @@ function SearchFilter(props) {
           <div className="col  s12 input-field">
             <input
               type="text"
-              placeholder="Search for recipes, ingredients, & anything food"
+              placeholder="Search for any recipe, e.g chicken, tilapia & mackerel"
               onChange={inputFilter}
               autoFocus
             />
