@@ -5,3 +5,9 @@
 @import "./sass/partials/recipedetails";
 @import "./sass/partials/loader";
 
+.error {
+  border: 1px solid red;
+  height: 100vh;
+  width: 100vw;
+  display: block;
+}

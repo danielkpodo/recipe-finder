@@ -1,10 +1,12 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
+import error from "./images/404.png";
 const NotFound = () => {
   return (
-    <div className="container">
-      <h1>The Page you are looking for does not exist!</h1>
-    </div>
+    <Link to="/">
+      {" "}
+      <img src={error} alt="page not found" className="error responsive-img" />
+    </Link>
   );
 };
 
